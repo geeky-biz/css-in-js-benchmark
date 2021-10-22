@@ -1,0 +1,191 @@
+.container {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 3px;
+    margin: 0.5em 1em;
+    padding: 0.25em 1em;
+}
+
+.bgTransparent
+{
+    background-color: transparent;
+}
+
+.bgBrown
+{
+    background-color: Brown;
+}
+
+.bgCornflowerBlue
+{
+    background-color: cornflowerblue;
+}
+
+.bgDarkGoldenRod
+{
+    background-color: darkgoldenrod;
+}
+
+.bgDarkOliveGreen
+{
+    background-color: darkolivegreen;
+}
+
+.bgDarkSalmon
+{
+    background-color: darksalmon;
+}
+
+.bgDarkSlateGray
+{
+    background-color: DarkSlateGray;
+}
+
+.bgIndianRed
+{
+    background-color: indianred;
+}
+
+.bgMidnightBlue
+{
+    background-color: midnightblue;
+}
+
+.bgSienna
+{
+    background-color: sienna;
+}
+
+.bgTeal
+{
+    background-color: teal;
+}
+
+.bgYellowGreen
+{
+    background-color: YellowGreen;
+}
+
+
+
+
+.borderBrown
+{
+    border: 2px solid Brown;
+}
+
+.borderCornflowerBlue
+{
+    border: 2px solid cornflowerblue;
+}
+
+.borderDarkGoldenRod
+{
+    border: 2px solid darkgoldenrod;
+}
+
+.borderDarkOliveGreen
+{
+    border: 2px solid darkolivegreen;
+}
+
+.borderDarkSalmon
+{
+    border: 2px solid darksalmon;
+}
+
+.borderDarkSlateGray
+{
+    border: 2px solid DarkSlateGray;
+}
+
+.borderIndianRed
+{
+    border: 2px solid indianred;
+}
+
+.borderMidnightBlue
+{
+    border: 2px solid midnightblue;
+}
+
+.borderSienna
+{
+    border: 2px solid sienna;
+}
+
+.borderTeal
+{
+    border: 2px solid teal;
+}
+
+.borderYellowGreen
+{
+    border: 2px solid YellowGreen;
+}
+
+
+
+
+
+.colorBrown
+{
+    color:  Brown;
+}
+
+.colorCornflowerBlue
+{
+    color:  cornflowerblue;
+}
+
+.colorDarkGoldenRod
+{
+    color:  darkgoldenrod;
+}
+
+.colorDarkOliveGreen
+{
+    color:  darkolivegreen;
+}
+
+.colorDarkSalmon
+{
+    color:  darksalmon;
+}
+
+.colorDarkSlateGray
+{
+    color:  DarkSlateGray;
+}
+
+.colorIndianRed
+{
+    color:  indianred;
+}
+
+.colorMidnightBlue
+{
+    color:  midnightblue;
+}
+
+.colorSienna
+{
+    color:  sienna;
+}
+
+.colorTeal
+{
+    color:  teal;
+}
+
+.colorYellowGreen
+{
+    color:  YellowGreen;
+}
+
+.colorWhite
+{
+    color: white;
+}
