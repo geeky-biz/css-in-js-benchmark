@@ -27,3 +27,4 @@
 
 # Relavent reading material:
 - https://github.com/styled-components/styled-components/issues/2377
+- CSS variables performance : https://lisilinhart.info/posts/css-variables-performance/
