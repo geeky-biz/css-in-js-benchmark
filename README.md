@@ -1,14 +1,16 @@
 # Libraries compared:
+- CSS modules (baseline)
 - [linaria](https://github.com/callstack/linaria)
 - [styled-components](https://github.com/styled-components/styled-components)
 
 # About the setup:
-- This is a Next.js SSR repository with two URLs - one for linaria and another for styled components.
-- Both the URLs load the same component - containing 22 buttons that change their color every 1 second as the React component is rerendered (due to state change).
-- The styling CSS for both the URLs is setup to be generated on the SSR and set internal via `<style>` tag within the page's HTML.
-- The two URLs are:
+- This is a Next.js SSR repository with three URLs - one for linaria (/linaria), one for styled components (/styled-components) and one for the css modules (/regularcss).
+- All the URLs load the same component - containing 22 buttons that change their color every 1 second as the React component is rerendered (via state change).
+- The styling CSS for these URLs is setup to be generated on the SSR and set internal via `<style>` tag within the page's HTML.
+- The URLs are:
     - `/linaria` - the page's styling is handled via linaria.
     - `/styled-components` - the page's styling is handled via styled components.
+    - `/regularcss` - CSS modules.
 
 # Page Loading Performance:
 - The page loading test was done via WPT (Fast 3G - Virginia, US - Emulated Moto G4):
