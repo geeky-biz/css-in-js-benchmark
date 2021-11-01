@@ -14,10 +14,14 @@
 
 # Page Loading Performance:
 - The page loading test was done via WPT (Fast 3G - Virginia, US - Emulated Moto G4):
-    - [Styled Components Run Results](https://webpagetest.org/result/211021_BiDc8W_7fee7dc0148745599ce0b34833eddfb7/)
-    - [Linaria Run Results](https://webpagetest.org/result/211021_BiDcD9_2176f341c7569bbbbb953780bed54bdb/)
-- The start render for the linaria page was 1.6s as compared to the same for styled-components at 1.5s. (Need to delve deeper to understand why.)
-- The JS loaded for `/linaria` is 77 kB gzipped while the same for `/styled-components` is 89 kB. This difference can be attributed to the difference in the size of the two packages.
+    - [CSS Modules](https://webpagetest.org/result/211101_BiDcEH_ada7ca6525b9962d346da98981849eec/)
+    - [Styled Components Run Results](https://webpagetest.org/result/211101_AiDcPN_e113b1f943b26de22031adbfcfd72e5a/)
+    - [Linaria Run Results](https://webpagetest.org/result/211101_BiDc0A_7c76dbbd71f325008e7aa52e81e70c4f/)
+- The `start render` and the LCP for all the three URLs were similar (no notable deviation).
+- The amount of JavaScript loaded for the three routes (sizes in gzipped kBytes):
+    - CSS modules : 70.3 kB
+    - linaria : 72.4 kB
+    - styled-components : 84.1 kB
 
 # Re-rendering Performance:
 - The rerendering performance was measured by loading the page on Xiaomi Mi A2 mobile (on Chrome 94.0.4 measured via Remote Debugging devtools - Performance tab).
