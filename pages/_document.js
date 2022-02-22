@@ -1,5 +1,6 @@
 import Document, { Head, Html, NextScript, Main } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import { extractCss } from 'goober';
 import { readFileSync } from "fs";
 import { join } from "path";
 
@@ -38,8 +39,10 @@ export default class MyDocument extends Document {
         });
 
       const initialProps = await Document.getInitialProps(ctx);
+      const gooberStyles = extractCss();
       return {
         ...initialProps,
+        gooberStyles,
         styles: (
           <>
             {initialProps.styles}
@@ -55,6 +58,15 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en" dir="ltr">
+        <Head>
+          <style
+            // goober is a bit more 'raw' and needs the end-user to
+            // define the style tag. Otherwise, it'll create a new style tag
+            // and you'll get the flash of unstyled content.
+            id={'_goober'}
+            dangerouslySetInnerHTML={{ __html: ' ' + this.props.gooberStyles }}
+          />
+        </Head>
         <StylesInlinedHead>
           <meta name="theme-color" content="#fff" />
         </StylesInlinedHead>
